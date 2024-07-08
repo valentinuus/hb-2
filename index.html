@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>BllB Production</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Организация и проведение онлайн трансляций в Санкт-Петербурге">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no"><link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> 
+<link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="css/libs/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrap _container">
+          <div class="header__content-wrap">
+            <div class="header__content _container">
+              <div class="header__logo wow animate__fadeInDown" data-wow-duration="1s"><a href="https://bllbprod.ru/">BllB</a></div>
+              <div class="menu" id="menu" data-menu>
+                <div class="menu__logo">BllB PRODUCTION</div>
+                <nav class="nav wow animate__fadeInDown" data-wow-duration="1s">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#portfolio">портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#equipment">оборудование</a></li>
+                    <li class="nav__item nav__item_hide"><a class="nav__link" href="#algorithm">Как мы работаем</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#faq">faq</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contacts">контакты</a></li>
+                  </ul>
+                </nav>
+                <div class="menu__phone wow animate__fadeInDown" data-wow-duration="1s"><a href="tel:+79959962969" type="tel">+7 (995) 996-29-69</a></div>
+                <div class="menu__descr">Организация и проведение онлайн трансляций</div>
+                <div class="menu__social"><a class="menu__social-link" href="https://t.me/Hooba_Booba" target="_blank">
+                     <svg class="t-sociallinks__svg" role="presentation" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#e90010"></path></svg></a><a class="menu__social-link" href="https://wa.me/+79217962969" target="_blank">
+                     <svg class="t-sociallinks__svg" role="presentation" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM69.7626 28.9928C64.6172 23.841 57.7739 21.0027 50.4832 21C35.4616 21 23.2346 33.2252 23.2292 48.2522C23.2274 53.0557 24.4823 57.7446 26.8668 61.8769L23 76L37.4477 72.2105C41.4282 74.3822 45.9107 75.5262 50.4714 75.528H50.4823C65.5029 75.528 77.7299 63.301 77.7363 48.2749C77.7408 40.9915 74.9089 34.1446 69.7626 28.9928ZM62.9086 53.9588C62.2274 53.6178 58.8799 51.9708 58.2551 51.7435C57.6313 51.5161 57.1766 51.4024 56.7228 52.0845C56.269 52.7666 54.964 54.2998 54.5666 54.7545C54.1692 55.2092 53.7718 55.2656 53.0915 54.9246C52.9802 54.8688 52.8283 54.803 52.6409 54.7217C51.6819 54.3057 49.7905 53.4855 47.6151 51.5443C45.5907 49.7382 44.2239 47.5084 43.8265 46.8272C43.4291 46.1452 43.7837 45.7769 44.1248 45.4376C44.3292 45.2338 44.564 44.9478 44.7987 44.662C44.9157 44.5194 45.0328 44.3768 45.146 44.2445C45.4345 43.9075 45.56 43.6516 45.7302 43.3049C45.7607 43.2427 45.7926 43.1776 45.8272 43.1087C46.0545 42.654 45.9409 42.2565 45.7708 41.9155C45.6572 41.6877 45.0118 40.1167 44.4265 38.6923C44.1355 37.984 43.8594 37.3119 43.671 36.8592C43.1828 35.687 42.6883 35.69 42.2913 35.6924C42.2386 35.6928 42.1876 35.6931 42.1386 35.6906C41.7421 35.6706 41.2874 35.667 40.8336 35.667C40.3798 35.667 39.6423 35.837 39.0175 36.5191C38.9773 36.5631 38.9323 36.6111 38.8834 36.6633C38.1738 37.4209 36.634 39.0648 36.634 42.2002C36.634 45.544 39.062 48.7748 39.4124 49.2411L39.415 49.2444C39.4371 49.274 39.4767 49.3309 39.5333 49.4121C40.3462 50.5782 44.6615 56.7691 51.0481 59.5271C52.6732 60.2291 53.9409 60.6475 54.9303 60.9612C56.5618 61.4796 58.046 61.4068 59.22 61.2313C60.5286 61.0358 63.2487 59.5844 63.8161 57.9938C64.3836 56.4033 64.3836 55.0392 64.2136 54.7554C64.0764 54.5258 63.7545 54.3701 63.2776 54.1395C63.1633 54.0843 63.0401 54.0247 62.9086 53.9588Z" fill="#e90010"></path></svg></a><a class="menu__social-link" href="mailto:bllb.prod@gmail.com" body="bllb письмо" subject="bllb запрс"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C6.71573 0 0 6.71582 0 15C0 23.2842 6.71573 30 15 30C23.2843 30 30 23.2842 30 15C30 6.71582 23.2843 0 15 0ZM6.84705 9.47266C6.44849 9.77881 6.16968 10.2061 6.05624 10.6846L15 15.9485L23.9438 10.6846C23.8303 10.2061 23.5515 9.77881 23.153 9.47266C22.7544 9.1665 22.2598 9 21.75 9H8.25C7.74023 9 7.24557 9.1665 6.84705 9.47266ZM6 19.6177V11.9216L12.5284 15.7632L6 19.6177ZM6.21487 20.7617L13.6061 16.3992L15 17.2183L16.3928 16.3982L23.784 20.7607C23.6016 21.1316 23.3137 21.4448 22.9536 21.6643C22.5935 21.8835 22.1761 22 21.75 22H8.25C7.82382 22.0005 7.40628 21.8843 7.04599 21.665C6.68573 21.4458 6.39749 21.1326 6.21487 20.7617ZM24 19.6177L17.4716 15.7644L24 11.9216V19.6177Z" fill="#E90010"/></svg></a></div>
+                <div class="menu__action"><a class="menu__action-link" href="tel:+79217962969" type="tel">позвонить</a><a class="menu__action-link" href="#contacts">заказать звонок</a></div>
+                <button class="menu-close" data-burger-close></button>
+              </div>
+              <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false"><span class="burger__line"></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__img wow animate__fadeIn" data-wow-duration="1s">
+          <picture class="picture">
+            <source srcset="img/header-bg.avif" type="image/avif"/>
+            <source srcset="img/header-bg.webp" type="image/webp"/>
+            <source srcset="img/header-bg.jpg" type="image/jpg"/><img src="img/header-bg.jpg" alt="фоновая картинка"/>
+          </picture>
+          <div class="header__black">
+            <div class="header__black-item header__black-item_first wow animate__backOutUp" data-wow-duration="3s"></div>
+            <div class="header__black-item header__black-item_second wow animate__backOutUp" data-wow-duration="3s"></div>
+            <div class="header__black-item header__black-item_third wow animate__backOutUp" data-wow-duration="3s"></div>
+            <div class="header__black-item header__black-item_fourth wow animate__backOutUp" data-wow-duration="3s"></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about">
+          <div class="about__wrap _container">
+            <h1 class="about__title title-page wow animate__fadeInUp" data-wow-duration="2s">BllB PRODUCTION</h1>
+            <div class="about__content wow bounceInUp">
+              <p class="about__text wow animate__fadeInUp" data-wow-duration="3s" data-wow-delay="0.1s">Более 10 лет организуем и проводим<br>онлайн-трансляции в Санкт-Петербурге</p><a class="about__link link-section wow animate__fadeInUp" data-wow-duration="4s" href="#contacts">связаться</a>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="gallery__wrap _container_gallery">
+            <div class="gallery__container">
+              <div class="gallery__item_1 gallery__item-wrap">
+                <div class="item">
+                  <picture class="picture">
+                    <source srcset="img/gallery/gal_01.avif" type="image/avif"/>
+                    <source srcset="img/gallery/gal_01.webp" type="image/webp"/>
+                    <source srcset="img/gallery/gal_01.jpg" type="image/jpg"/><img src="img/gallery/gal_01.jpg" alt="онлайн трансляции"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="gallery__item_2 gallery__item-wrap">
+                <div class="item">
+                  <picture class="picture">
+                    <source srcset="img/gallery/gal_02.avif" type="image/avif"/>
+                    <source srcset="img/gallery/gal_02.webp" type="image/webp"/>
+                    <source srcset="img/gallery/gal_02.jpg" type="image/jpg"/><img src="img/gallery/gal_02.jpg" alt="онлайн трансляции"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="gallery__item_3 gallery__item-wrap">
+                <div class="item">
+                  <picture class="picture">
+                    <source srcset="img/gallery/gal_04.avif" type="image/avif"/>
+                    <source srcset="img/gallery/gal_04.webp" type="image/webp"/>
+                    <source srcset="img/gallery/gal_04.jpg" type="image/jpg"/><img src="img/gallery/gal_04.jpg" alt="онлайн трансляции"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="gallery__item_4 gallery__item-wrap">
+                <div class="item">
+                  <picture class="picture">
+                    <source srcset="img/gallery/gal_05.avif" type="image/avif"/>
+                    <source srcset="img/gallery/gal_05.webp" type="image/webp"/>
+                    <source srcset="img/gallery/gal_05.jpg" type="image/jpg"/><img src="img/gallery/gal_05.jpg" alt="онлайн трансляции"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="gallery__item_5 gallery__item-wrap">
+                <div class="item">
+                  <picture class="picture">
+                    <source srcset="img/gallery/gal_03.avif" type="image/avif"/>
+                    <source srcset="img/gallery/gal_03.webp" type="image/webp"/>
+                    <source srcset="img/gallery/gal_03.jpg" type="image/jpg"/><img src="img/gallery/gal_03.jpg" alt="онлайн трансляции"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="gallery__item_6 gallery__item-wrap">
+                <div class="item">
+                  <picture class="picture">
+                    <source srcset="img/gallery/gal_06.avif" type="image/avif"/>
+                    <source srcset="img/gallery/gal_06.webp" type="image/webp"/>
+                    <source srcset="img/gallery/gal_06.jpg" type="image/jpg"/><img src="img/gallery/gal_06.jpg" alt="онлайн трансляции"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="gallery__item_7 gallery__item-wrap">
+                <div class="item">
+                  <picture class="picture">
+                    <source srcset="img/gallery/gal_07.avif" type="image/avif"/>
+                    <source srcset="img/gallery/gal_07.webp" type="image/webp"/>
+                    <source srcset="img/gallery/gal_07.jpg" type="image/jpg"/><img src="img/gallery/gal_07.jpg" alt="онлайн трансляции"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+          <div class="portfolio__wrap _container">
+            <h2 class="portfolio__title title-page title-page_second wow animate__fadeInUp" data-wow-duration="2s">ПОРТФОЛИО <span>01</span></h2>
+            <ul class="portfolio__filter-list filter-list wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+              <li class="filter-list__item">
+                <button class="filter-list__btn" data-filter="*">все</button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__btn" data-filter=".offline">оффлайн</button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__btn" data-filter=".online">онлайн</button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__btn" data-filter=".all">оффлайн и онлайн</button>
+              </li>
+            </ul>
+            <div class="grid">
+              <div class="product grid__item all">
+                <div class="grid__item-img">
+                  <div class="grid__item-slider-wrapp">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper wow animate__fadeInUp" data-wow-duration="2s">
+                        <div class="swiper-slide"><img src="img/gallery/offline-online.jpg" alt="offline online"></div>
+                        <div class="swiper-slide"><img src="img/gallery/offline-online.jpg" alt="offline online"></div>
+                        <div class="swiper-slide"><img src="img/gallery/offline-online.jpg" alt="offline online"></div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__item-text-block wow animate__fadeInUp" data-wow-duration="2.5s">
+                  <div class="grid__item-title">День спасения</div>
+                  <div class="grid__item-text">Крупный проект. Концерт. 12 камер, 2 мобильные камеры, 3 камеры на экраны в МТС Live Холл.</div>
+                  <div class="grid__item-info"> 
+                    <div class="grid__item-date">02.10.2023</div>
+                    <div class="grid__item-type">оффлайн и онлайн</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product grid__item online">
+                <div class="grid__item-img">
+                  <div class="grid__item-slider-wrapp">
+                    <div class="swiper mySwiper wow animate__fadeInUp" data-wow-duration="2s">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/gallery/offline.jpg" alt="offline"></div>
+                        <div class="swiper-slide"><img src="img/gallery/offline.jpg" alt="offline"></div>
+                        <div class="swiper-slide"><img src="img/gallery/offline.jpg" alt="offline"></div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__item-text-block wow animate__fadeInUp" data-wow-duration="2.5s">
+                  <div class="grid__item-title">Корпоратив Advisability</div>
+                  <div class="grid__item-text">Была организована видеоконференцсвязь между двумя странами и онлайн-платформой из Гольф-клуба Петергоф.</div>
+                  <div class="grid__item-info"> 
+                    <div class="grid__item-date">13.02.2022</div>
+                    <div class="grid__item-type">онлайн</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product grid__item offline">
+                <div class="grid__item-img">
+                  <div class="grid__item-slider-wrapp">
+                    <div class="swiper mySwiper wow animate__fadeInUp" data-wow-duration="2s">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/gallery/online.jpg" alt="online"></div>
+                        <div class="swiper-slide"><img src="img/gallery/online.jpg" alt="online"></div>
+                        <div class="swiper-slide"><img src="img/gallery/online.jpg" alt="online"></div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__item-text-block wow animate__fadeInUp" data-wow-duration="2.5s">
+                  <div class="grid__item-title">Студфест</div>
+                  <div class="grid__item-text">Снимали репортаж для коллег из другого города на территории Севкабель Порт.</div>
+                  <div class="grid__item-info"> 
+                    <div class="grid__item-date">29.12.2023</div>
+                    <div class="grid__item-type">оффлайн</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="advantages__wrap _container">
+            <div class="advantages__block advantages__block_big">
+              <div class="advantages__block-title advantages__block-title_lg wow animate__fadeInLeft" data-wow-duration="2s">8 лет</div>
+              <div class="advantages__block-descr advantages__block-descr_first wow animate__fadeInLeft" data-wow-duration="2s">организуем и проводим онлайн-трансляции</div>
+            </div>
+            <div class="advantages__block advantages__block_lg">
+              <div class="advantages__block-title advantages__block-title_lg wow animate__fadeInRight" data-wow-duration="2s">15</div>
+              <div class="advantages__block-descr wow animate__fadeInRight" data-wow-duration="2s">лет в сфере телевидения</div>
+            </div>
+            <div class="advantages__block advantages__block_sm">
+              <div class="advantages__block-title advantages__block-title_sm wow animate__fadeInLeft" data-wow-duration="2s">10+</div>
+              <div class="advantages__block-descr wow animate__fadeInLeft" data-wow-duration="2s">специалистов</div>
+            </div>
+            <div class="advantages__block advantages__block_sm advantages__block_line">
+              <div class="advantages__block-title advantages__block-title_sm wow animate__fadeInUp" data-wow-duration="2s">__</div>
+              <div class="advantages__block-descr wow animate__fadeInUp" data-wow-duration="2s">идет запись...</div>
+            </div>
+            <div class="advantages__block advantages__block_sm advantages__block_day">
+              <div class="advantages__block-title advantages__block-title_sm wow animate__fadeInRight" data-wow-duration="2s">от 1 дня</div>
+              <div class="advantages__block-descr wow animate__fadeInRight" data-wow-duration="2s">подготовка</div>
+            </div>
+          </div>
+        </section>
+        <section class="algorithm" id="algorithm">
+          <div class="algorithm__wrap _container">
+            <h2 class="portfolio__title title-page title-page_second title-page_multiline wow animate__fadeInUp" data-wow-duration="1s">КАК МЫ <br> РАБОТАЕМ <span>02</span></h2>
+            <div class="algorithm__list"> 
+              <div class="algorithm__item">
+                <div class="algorithm__text algorithm__text_first wow animate__fadeInUp" data-wow-duration="2s">Расскажите нам о&nbsp;вашем мероприятии: формат, продолжительность, предполагаемое количество участников, в&nbsp;какой срок нужно организовать трансляцию. Укажите все важные детали. Мы&nbsp;составляем предварительную смету и&nbsp;отдаем вам на&nbsp;утверждение. </div>
+                <div class="algorithm__img algorithm__img_first wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s"><img src="img/gallery/gal_02.jpg" alt=""></div>
+                <div class="algorithm__title algorithm__title_first wow animate__fadeInUp" data-wow-duration="2s">ШАГ 1</div>
+              </div>
+              <div class="algorithm__item algorithm__item_second"> 
+                <div class="algorithm__img algorithm__img_second wow animate__fadeInUp" data-wow-duration="2s"><img src="img/gallery/dj.jpg" alt=""></div>
+                <div class="algorithm__blok wow animate__fadeInUp" data-wow-duration="2s">
+                  <div class="algorithm__title algorithm__title_second">ШАГ 2</div>
+                  <div class="algorithm__text">Мы выезжаем на&nbsp;площадку и&nbsp;определяем технические возможности локации. Обсуждаем сценарий, эфирную графику, составляем список необходимого оборудования и&nbsp;формируем команду специалистов. Выбираем площадку эфира (VK, YT, платные).</div>
+                </div>
+              </div>
+              <div class="algorithm__item algorithm__item_third">
+                <div class="algorithm__text algorithm__text_third wow animate__fadeInUp" data-wow-duration="2s">Монтируем оборудование, проводим технический прогон (при&nbsp;необходимости репетицию) и&nbsp;обеспечиваем бесперебойный эфир. В&nbsp;течение 3-5 дней передаем запись эфира.</div>
+                <div class="algorithm__title wow animate__fadeInUp" data-wow-duration="2s">ШАГ 3</div>
+                <div class="algorithm__img algorithm__img_third wow animate__fadeInUp" data-wow-duration="2s"><img src="img/gallery/offline-online.jpg" alt=""></div>
+              </div><a class="algorithm__link link-section wow animate__fadeInUp" href="#contacts" data-wow-duration="3s">связаться</a>
+            </div>
+          </div>
+        </section>
+        <section class="team">
+          <div class="team__wrap _container">
+            <h2 class="portfolio__title title-page title-page_second wow animate__fadeInUp" data-wow-duration="1s">Команда <span>03</span></h2>
+            <div class="team__descr-wrap">
+              <div class="team__descr wow animate__fadeInUp" data-wow-duration="2s">Мы творческие профессионалы, готовые воплотить любые креативные идеи наших заказчиков в жизнь. Наша команда стремится к индивидуальному подходу к каждому проекту и предлагает современные решения для создания уникальных и запоминающихся образов.</div><a class="team__link link-section wow animate__fadeInUp" href="#contacts" data-wow-duration="3s">связаться</a>
+            </div>
+            <div class="team-slider wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="team-slider__wrap">
+                <div class="team-slide">
+                  <div class="team-slide__wrap">
+                    <div class="team-slide__img"> <img src="img/foto.svg" alt=""></div>
+                    <div class="team-slide__data"> 
+                      <div class="team-slide__name">Владимир Белов</div>
+                      <div class="team-slide__post">СЕО</div>
+                      <div class="team-slide__descr">Обладает уникальными знаниями в продвижении контента. Помог большому количеству наших клиентов подняться на вершину поисковых систем, привлекая новую аудиторию и увеличивая трафик. Его профессионализм и усердие делают его незаменимым членом нашей команды.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide">
+                  <div class="team-slide__wrap">
+                    <div class="team-slide__img"> <img src="img/foto.svg" alt=""></div>
+                    <div class="team-slide__data"> 
+                      <div class="team-slide__name">Дмитрий Миненко</div>
+                      <div class="team-slide__post">Инженер</div>
+                      <div class="team-slide__descr">Успешно решает сложные задачи и всегда находит эффективные решения для повышения производительности и качества съемки. Благодаря своей ответственности, трудолюбию и творческому подходу, приносит значительный вклад в нашу работу.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide">
+                  <div class="team-slide__wrap">
+                    <div class="team-slide__img"> <img src="img/foto.svg" alt=""></div>
+                    <div class="team-slide__data"> 
+                      <div class="team-slide__name">Леонид Зорин</div>
+                      <div class="team-slide__post">Технический директор</div>
+                      <div class="team-slide__descr">Отвечает за внедрение технических решений, управление инфраструктурой и обеспечением безопасности. Умеет эффективно управлять командой специалистов и решать сложные технические задачи.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide">
+                  <div class="team-slide__wrap">
+                    <div class="team-slide__img"> <img src="img/foto.svg" alt=""></div>
+                    <div class="team-slide__data"> 
+                      <div class="team-slide__name">Марк Куличков</div>
+                      <div class="team-slide__post">Оператор</div>
+                      <div class="team-slide__descr">Умеет создавать уникальные и запоминающиеся кадры, которые не оставят равнодушным ни одного зрителя. Благодаря творческому подходу, способен превратить даже обычное мероприятие в настоящее произведение искусства.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination pag-1 wow animate__fadeIn" data-wow-duration="5s"></div>
+              <div class="slider-buttons wow animate__fadeIn" data-wow-duration="5s">
+                <button class="swiper-button-prev"></button>
+                <button class="swiper-button-next"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <div class="partners__wrap _container">
+            <h2 class="portfolio__title title-page title-page_second wow animate__fadeInUp" data-wow-duration="1s">С кем работали <span>04</span></h2>
+            <div class="team__descr-wrap">
+              <div class="team__descr wow animate__fadeInUp" data-wow-duration="2s">Хорошо продуманная оналйн реклама способна значительно повысить узнаваемость бренда и улучшить взаимодействие с потенциальными клиентами.</div><a class="team__link link-section wow animate__fadeInUp" data-wow-duration="4s" href="#contacts">связаться</a>
+            </div>
+            <div class="partners-slider wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="partners-slider__wrap">
+                <div class="partners-slide"> <img src="img/foto.svg" alt=""></div>
+                <div class="partners-slide"> <img src="img/foto.svg" alt=""></div>
+                <div class="partners-slide"> <img src="img/foto.svg" alt=""></div>
+                <div class="partners-slide"> <img src="img/foto.svg" alt=""></div>
+                <div class="partners-slide"> <img src="img/foto.svg" alt=""></div>
+                <div class="partners-slide"> <img src="img/foto.svg" alt=""></div>
+                <div class="partners-slide"> <img src="img/foto.svg" alt=""></div>
+              </div>
+              <div class="swiper-pagination pag-2 wow animate__fadeIn" data-wow-duration="5s"></div>
+              <div class="slider-buttons wow animate__fadeIn" data-wow-duration="5s">
+                <button class="swiper-button-prev"></button>
+                <button class="swiper-button-next"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="equipment" id="equipment">
+          <div class="equipment__wrap _container">
+            <h3 class="title-page title-page_second title-page_equipment wow animate__fadeInUp" data-wow-duration="1s">Оборудование <span>05</span></h3>
+            <div class="equipment__item equipment-item">
+              <div class="equipment-item__number wow animate__fadeInUp" data-wow-duration="1s">01</div>
+              <div class="equipment-item__data wow animate__fadeInUp" data-wow-duration="1s">
+                <div class="equipment-item__title">Камеры и объективы</div>
+                <div class="equipment-item__descr">Используем камкордеры Sony Pxw-Fs5 и Sony Pxw-Z150 с матрицей 4K, которые передают контрастное изображение с высокой детализацией.</div>
+              </div>
+            </div>
+            <div class="equipment__item equipment-item">
+              <div class="equipment-item__number wow animate__fadeInUp" data-wow-duration="1s">02</div>
+              <div class="equipment-item__data wow animate__fadeInUp" data-wow-duration="1s">
+                <div class="equipment-item__title">Микрофоны, аудиомикшеры</div>
+                <div class="equipment-item__descr">Стационарные радиосистемы Sennheiser с петличными микрофонами или оголовьем и ручные/вокальные Shure.</div>
+              </div>
+            </div>
+            <div class="equipment__item equipment-item">
+              <div class="equipment-item__number wow animate__fadeInUp" data-wow-duration="1s">03</div>
+              <div class="equipment-item__data wow animate__fadeInUp" data-wow-duration="1s">
+                <div class="equipment-item__title">Сервер и программное обеспечение</div>
+                <div class="equipment-item__descr">Мы работаем на вещательном оборудовании Blackmagic Design. Ноутбуки и серверы Intel I9 и Intel I7 и графические процессоры RTX3080, RTX3070.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq" id="faq"> 
+          <div class="faq__wrap _container">
+            <h4 class="title-page title-page_second wow animate__fadeInUp" data-wow-duration="1s">FAQ <span>06</span></h4>
+            <div class="faq__block wow animate__fadeInUp" data-wow-duration="1s">
+              <div class="accordion accordion-1">
+                <button class="accordion__control" aria-expanded="false"><span class="accordion__title">Кто мы</span><span class="accordion__icon"></span></button>
+                <div class="accordion__content" aria-hidden="true">
+                  <p>Команда профессионалов с телевизионным опытом проведения трансляций крупных городских мероприятий и проектов.</p>
+                </div>
+              </div>
+              <div class="accordion accordion-2">
+                <button class="accordion__control" aria-expanded="false"><span class="accordion__title">Как заказать трансляцию</span><span class="accordion__icon"></span></button>
+                <div class="accordion__content" aria-hidden="true">
+                  <p>Сформулируйте примерное или точное техническое задание, обозначьте предполагаемые дату, время и место проведения мероприятия и бюджет. Передайте эту информацию любым удобным для вас способом на странице контакты.</p>
+                </div>
+              </div>
+              <div class="accordion accordion-3">
+                <button class="accordion__control" aria-expanded="false"><span class="accordion__title">Куда идет трансляция</span><span class="accordion__icon"></span></button>
+                <div class="accordion__content" aria-hidden="true">
+                  <p>Наиболее используемые площадки для трансляций: VK, YouTube, RuTube и сайты клиентов. Также есть возможность трансляций с закрытым доступом и авторизацией: Facecast, Kinescope и др.</p>
+                </div>
+              </div>
+              <div class="accordion accordion-4">
+                <button class="accordion__control" aria-expanded="false"><span class="accordion__title">Сколько стоит</span><span class="accordion__icon"></span></button>
+                <div class="accordion__content" aria-hidden="true">
+                  <p>Цена складывается из следующих критериев: даты и места проведения, количества и качества оборудования и состава съемочной бригады. Каждый проект рассчитывается индивидуально.</p>
+                </div>
+              </div>
+              <div class="accordion accordion-5">
+                <button class="accordion__control" aria-expanded="false"><span class="accordion__title">Почему мы</span><span class="accordion__icon"></span></button>
+                <div class="accordion__content" aria-hidden="true">
+                  <p>Ваша задача — наше решение. Наш опыт позволяет нам быстро разобраться в любой поставленной задаче и находить подходящее решение. В короткий срок c оптимальными ресурсами и с обоснованными расходами.</p>
+                </div>
+              </div>
+              <div class="accordion accordion-6">
+                <button class="accordion__control" aria-expanded="false"><span class="accordion__title">Условия оплаты</span><span class="accordion__icon"></span></button>
+                <div class="accordion__content" aria-hidden="true">
+                  <p>Мы ценим свое и ваше время и работаем по предоплате. Готовы предложить индивидуальные условия постоянным клиентам.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer__wrap _container">
+          <h4 class="title-page title-page_second wow animate__fadeInUp" data-wow-duration="1s">БУДЕМ ТВОРИТЬ<span>05</span></h4>
+          <div class="contacts__content-block">
+            <div class="contacts__form">
+              <form class="form wow animate__fadeInUp" data-wow-duration="1s" action="#" method="POST" enctype="multipart/form-data" id="form-advert">
+                <div class="control-wrapper">
+                  <label class="form__label">
+                    <input class="input input-tel" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="+7(999) 999-99-99">
+                  </label>
+                </div>
+                <button class="button contacts__button">Отправить</button>
+              </form>
+            </div>
+            <div class="contacts__contact">
+              <div class="contacts__descr wow animate__fadeInUp" data-wow-duration="1s">Оставьте свой номер телефона, мы свяжемся и ответим на все интересующие вас вопросы!</div>
+              <div class="contacts__seti"><a class="wow animate__fadeInUp" data-wow-duration="1s" href="tel:+79959962969" type="tel">+7 (995) 996-29-69</a><a class="wow animate__fadeInUp" data-wow-duration="1s" href="https://t.me/Hooba_Booba" target="_blank">TELEGRAM</a><a class="wow animate__fadeInUp" data-wow-duration="1s" href="https://wa.me/+79217962969" target="_blank">WhatsAPP</a><a class="wow animate__fadeInUp" data-wow-duration="1s" href="mailto:bllb.prod@gmail.com">bllb.prod@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/libs/inputmask.min.js"></script>
+    <script src="js/libs/just-validate3.3.3.min.js"></script>
+    <script src="js/libs/isotope.pkgd.min.js"></script>
+    <script src="js/libs/swiper-bundle.js"></script>
+    <script src="js/libs/wow.min.js"></script>
+    <script src="js/script.js"> </script>
+  </body>
+</html>
